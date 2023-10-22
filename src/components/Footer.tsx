@@ -10,11 +10,11 @@ export default function Footer() {
             What is REIMJL?
           </h4>
           <p className="line-clamp-4 max-w-lg text-[0.9rem]">
-            The RECTEM International Multidisciplinary Journal (REIMJ) welcomes
+            {`The RECTEM International Multidisciplinary Journal (REIMJ) welcomes
             submission manuscripts for its Maiden edition, Vol 1, No 1, July
             2022. The journal is a high quality peer-reviewed research journal
             of publication by Redeemer's College of Technology of and
-            Management, Mowe Ogun State. It provides
+            Management, Mowe Ogun State. It provides`}
           </p>
           <button className="btn text-secondary p-0 btn-link">
             Learn More
@@ -25,7 +25,7 @@ export default function Footer() {
           <p className="font-semibold">Gbolade Soneye, PhD</p>
           <data className="text-xs">
             <p>Department of Accountancy</p>
-            <p>Redeemer's College of Technology and Management.</p>
+            <p>{`Redeemer's College of Technology and Management.`}</p>
             <p>Mowe, Ogun State</p>
             <a
               href="mailto: eyiolorunshe.dt@rectem.edu.ng"
@@ -70,7 +70,7 @@ export default function Footer() {
           <p className="font-semibold">Mr David Eyiolorunshe</p>
           <data className="text-xs">
             <p>Department Business Administration</p>
-            <p>Redeemer's College of Technology and Management.</p>
+            <p>{`Redeemer's College of Technology and Management.`}</p>
             <p>Mowe, Ogun State</p>
             <a
               href="mailto: eyiolorunshe.dt@rectem.edu.ng"

@@ -1,6 +1,5 @@
 import JournalCard from "@/components/JournalCard";
 import SideNav from "@/components/SideNav";
-import Tabs from "@/components/Tabs";
 import prisma from "@/lib/prisma";
 import Link from "next/link";
 import { convertDateFormat } from "../../../lib/dateFormat";

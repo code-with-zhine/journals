@@ -129,7 +129,7 @@ export default function Publish() {
                       htmlFor="full-name"
                       className="block text-sm font-medium leading-6 text-gray-900"
                     >
-                      Author's Full name
+                      {`Author's Full name`}
                     </label>
                     <div className="mt-2">
                       <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-primary sm:max-w-md">
@@ -155,7 +155,7 @@ export default function Publish() {
                       htmlFor="email"
                       className="block text-sm font-medium leading-6 text-gray-900"
                     >
-                      Author's Email
+                      {`Author's Email`}
                     </label>
                     <div className="mt-2">
                       <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-primary sm:max-w-md">
@@ -181,7 +181,7 @@ export default function Publish() {
                       htmlFor="department"
                       className="block text-sm font-medium leading-6 text-gray-900"
                     >
-                      Author's Department
+                      {`Author's Department`}
                     </label>
                     <div className="mt-2">
                       <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-primary sm:max-w-md">
@@ -207,7 +207,7 @@ export default function Publish() {
                       htmlFor="organisation"
                       className="block text-sm font-medium leading-6 text-gray-900"
                     >
-                      Author's Organisation
+                      {`Author's Organisation`}
                     </label>
                     <div className="mt-2">
                       <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-primary sm:max-w-md">
@@ -490,7 +490,7 @@ export default function Publish() {
                     />
                   </div>
                   <p className="mt-3 text-sm leading-6 text-gray-600">
-                    Keeywords separarted by comma ","
+                    {`Keeywords separarted by comma ","`}
                   </p>
                 </div>
                 <div className="col-span-full">
@@ -515,7 +515,7 @@ export default function Publish() {
                     />
                   </div>
                   <p className="mt-3 text-sm leading-6 text-gray-600">
-                    Keeywords separarted by comma ","
+                    {`Keywords separarted by comma ","`}
                   </p>
                 </div>
               </div>
