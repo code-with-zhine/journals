@@ -24,17 +24,19 @@ CREATE TABLE [dbo].[User] (
 -- CreateTable
 CREATE TABLE [dbo].[Paper] (
     [id] INT NOT NULL IDENTITY(1,1),
+    [abstract] TEXT NOT NULL,
     [paperCategory] NVARCHAR(1000) NOT NULL,
     [paperTitle] NVARCHAR(1000) NOT NULL,
     [paperISSN] NVARCHAR(1000) NOT NULL,
     [paperVolume] NVARCHAR(1000) NOT NULL,
     [keywords] NVARCHAR(1000) NOT NULL,
-    [previewUrl] NVARCHAR(1000) NOT NULL,
-    [downloadUrl] NVARCHAR(1000) NOT NULL,
-    [receivedDate] DATETIME2 NOT NULL,
-    [approvedDate] DATETIME2 NOT NULL,
-    [publishdDate] DATETIME2 NOT NULL,
+    [previewUrl] NVARCHAR(1000),
+    [downloadUrl] NVARCHAR(1000),
+    [receivedDate] NVARCHAR(1000) NOT NULL,
+    [approvedDate] NVARCHAR(1000) NOT NULL,
+    [publishdDate] NVARCHAR(1000),
     [createdAt] DATETIME2 NOT NULL CONSTRAINT [Paper_createdAt_df] DEFAULT CURRENT_TIMESTAMP,
+    [isOpen] BIT NOT NULL CONSTRAINT [Paper_isOpen_df] DEFAULT 0,
     [ownerEmail] NVARCHAR(1000) NOT NULL,
     CONSTRAINT [Paper_pkey] PRIMARY KEY CLUSTERED ([id])
 );

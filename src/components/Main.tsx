@@ -3,28 +3,28 @@ import JournalCard from "./JournalCard";
 import SideNav from "./SideNav";
 
 async function getPaper() {
-  const papers = await prisma.paper.findMany({
+  const publication = await prisma?.publication.findMany({
     include: {
-      authors: true,
+      Article: true,
     },
   });
 
-  return papers;
+  return publication;
 }
 
 export default async function Main() {
-  const papers = await getPaper();
-  if (!papers) return null;
+  const publication = await getPaper();
+  if (!publication) return null;
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 text-gray-500">
       <div className="col-span-1 lg:col-span-2 p-5">
-        <h4 className="text-xl pb-5 uppercase text-gray-600 font-semibold">
-          Recent Uploads
+        <h4 className="text-lg pb-5 capitalize text-gray-600 font-semibold">
+          Recent Publication
         </h4>
-        <section>
-          {papers.map((paper) => (
-            <JournalCard key={paper.id} paper={paper} />
+        <section className="space-y-4">
+          {publication.map((pub) => (
+            <JournalCard key={pub.id} publication={pub} />
           ))}
         </section>
       </div>

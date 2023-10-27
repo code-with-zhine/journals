@@ -7,22 +7,23 @@ import { convertIsoDate } from "../../../lib/convertIsoDate";
 import { notFound } from "next/navigation";
 
 export default async function Main({ params }: { params: { id: string } }) {
-  const id = parseInt(params.id);
+  const id = params.id;
+  console.log(id);
 
-  const paper = await prisma.paper.findUnique({
-    where: {
-      id: id,
-    },
-    include: {
-      authors: true,
-    },
-  });
+  // const paper = await prisma.paper.findUnique({
+  //   where: {
+  //     id: id,
+  //   },
+  //   include: {
+  //     authors: true,
+  //   },
+  // });
 
-  if (!paper) return notFound();
+  // if (!paper) return notFound();
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 text-gray-500">
-      <div className="col-span-1 lg:col-span-2 p-5">
+      {/* <div className="col-span-1 lg:col-span-2 p-5">
         <h6 className="uppercase font-semibold tracking-wider text-xs px-4 py-2 text-black bg-secondary">
           {paper?.paperCategory}
         </h6>
@@ -100,7 +101,7 @@ export default async function Main({ params }: { params: { id: string } }) {
             Terms of the REIMJL
           </a>
         </p>
-      </div>
+      </div> */}
       <div className="col-span-1 p-5 bg-primary ">
         <SideNav />
       </div>

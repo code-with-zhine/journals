@@ -1,14 +1,14 @@
 import prisma from "@/lib/prisma";
 
-async function getPaper() {
-  const papers = await prisma.paper.findMany();
+// async function getPaper() {
+//   const papers = await prisma.paper.findMany();
 
-  return papers;
-}
+//   return papers;
+// }
 
 async function SideNav() {
-  const papers = await getPaper();
-  if (!papers) return null;
+  // const papers = await getPaper();
+  // if (!papers) return null;
 
   return (
     <>
@@ -17,18 +17,18 @@ async function SideNav() {
           Journals by Title
         </h4>
         <div className="text-gray-300">
-          {papers.map((paper) => (
+          {/* {papers.map((paper) => (
             <a
               key={paper.id}
               className="btn text-gray-300 text-left p-0 mb-1 btn-link"
             >
               {paper.paperTitle}
             </a>
-          ))}
+          ))} */}
         </div>
         <div>
           <p className="text-xs text-secondary mb-1">
-            Showing {papers.length} out of {papers.length}
+            {/* Showing {papers.length} out of {papers.length} */}
           </p>
           <button className="btn btn-sm btn-secondary btn-outline">
             All Journals by title
