@@ -142,7 +142,7 @@ export default function JournalCard({
                   />
                 </g>
               </svg>
-              <span className="text-xs px-2"> Open Access</span>
+              <span className="text-xs px-2"> Open Access - zhine</span>
             </div>
             <p className="text-xs text-accent font-semibold capitalize tracking-wider px-4 py-1 rounded-md">
               {publication.pubType}
